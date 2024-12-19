@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div class="kalkulator">
+      <div class="container">
+        <h4 style="color: #ffffff;">Kalkulator</h4>
+        <form action="" name="form">
+          <input type="text" class="view" name="view" />
+        </form>
+        <table>
+          <tr>
+            <td>
+              <button type="button" class="btn number" onclick="insertData(9)">
+                9
+              </button>
+            </td>
+            <td>
+              <button type="button" class="btn number" onclick="insertData(8)">
+                8
+              </button>
+            </td>
+            <td>
+              <button type="button" class="btn number" onclick="insertData(7)">
+                7
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn operator add"
+                onclick="insertData('+')"
+              >
+                +
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="btn number" onclick="insertData(6)">
+                6
+              </button>
+            </td>
+            <td>
+              <button type="button" class="btn number" onclick="insertData(5)">
+                5
+              </button>
+            </td>
+            <td>
+              <button type="button" class="btn number" onclick="insertData(4)">
+                4
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn operator subtract"
+                onclick="insertData('-')"
+              >
+                -
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="btn number" onclick="insertData(3)">
+                3
+              </button>
+            </td>
+            <td>
+              <button type="button" class="btn number" onclick="insertData(2)">
+                2
+              </button>
+            </td>
+            <td>
+              <button type="button" class="btn number" onclick="insertData(1)">
+                1
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn operator divide"
+                onclick="insertData('/')"
+              >
+                /
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="btn number" onclick="insertData(0)">
+                0
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn operator multiply"
+                onclick="insertData('*')"
+              >
+                *
+              </button>
+            </td>
+            <td>
+              <button type="button" class="btn color" onclick="clearData()">
+                c
+              </button>
+            </td>
+            <td>
+              <button type="button" class="btn aqual" onclick="aqual()">
+                =
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <button type="button" class="btn button" onclick="deleteData()">
+                del
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
